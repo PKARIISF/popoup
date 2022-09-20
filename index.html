@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script>
+
+        setTimeout(function(){
+
+        // Get the modal
+
+        var modal = document.getElementById("content2");
+
+        
+
+        
+
+        // Get the <span> element that closes the modal
+
+        var span_custom = document.getElementsByClassName("close_popup")[0];
+
+        
+
+        
+
+        // When the user clicks on <span> (x), close the modal
+
+        span_custom.onclick = function() {
+
+        modal.style.display = "none";
+
+        }
+
+        
+
+        
+
+        var css = ".close_popup:hover, .close_popup:focus {  color : rgb(255, 255, 255);  text-decoration-line : none;  text-decoration-thickness : initial;  text-decoration-style : initial;  text-decoration-color : initial;  cursor : pointer;}.square::after {  display : block;  padding-bottom : 100%;}.button_test:hover, .button_test:focus {  background-position : left bottom;  color : rgb(255, 255, 255);  border : 1px solid rgb(3, 30, 65);}";
+
+            var head = document.getElementsByTagName('head')[0];
+
+            var style = document.createElement('style');
+
+        
+
+        style.appendChild(document.createTextNode(css));
+
+        head.appendChild(style);
+
+        
+
+        
+
+        },1500);
+
+    </script>
+
+    <style>
+
+        .square::after {
+
+        content : "";
+
+        display : block;
+
+        padding-bottom : 100%;
+
+        }
+
+        .button_test:hover, .button_test:focus {
+
+        background-position : left bottom;
+
+        color : rgb(255, 255, 255);
+
+        border : 1px solid rgb(3, 30, 65);
+
+        }
+
+        ::-webkit-scrollbar {
+
+        display : none;
+
+        }
+
+        #myModalTesting {
+
+        display : none;
+
+        }
+
+        #content1 {
+
+        position : absolute;
+
+        z-index : 999;
+
+        }
+
+        #text {
+
+        z-index : 999;
+
+        }
+
+        #content2 {
+
+        color : white;
+
+        position : fixed;
+
+        left : calc(68vw);
+
+        top : 50%;
+
+        width : 32vw;
+
+        height : auto;
+
+        font-size : 1.5em;
+
+        }
+
+        #title {
+
+        font-size : 1.5em;
+
+        }
+
+        #cube {
+
+        width : 26px;
+
+        height : 25px;
+
+        }
+
+        #text2 {
+
+        display : flex;
+
+        }
+
+        #content3, #content4 {
+
+        width : 50%;
+
+        }
+
+        @media screen and (max-width: 900px) {
+
+        #content2 {
+
+            left : calc(25vw);
+
+            top : 53%;
+
+            width : 75vw;
+
+            font-size : 0.9em;
+
+        }
+
+        #cube {
+
+            width : 8vw;
+
+            height : 4vh;
+
+        }
+
+        #text2 {
+
+            display : block;
+
+        }
+
+        #content3 {
+
+            width : 100%;
+
+        }
+
+        #content4 {
+
+            width : 70%;
+
+        }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="content2" style="background-color:#041e41; border-right-width: 6px; border-color: #b3a368; border-right-style: solid;"> 
+
+        <div style="width: 5%; float: right; margin-right: 15px;"><span class="close_popup" id="title">X</span></div>
+
+        <br>
+
+        <div id="text" style="margin-left: 15px;">
+
+            <div id="text1">
+
+                <div id="cube" style="background-color: #2079f1; margin-right: 5px;"></div>
+
+                <div id="title">Asegura tu auto con Actinver <br><span style="color: #b3a368; font-weight: bold;"></span></div><br>
+
+            </div>
+
+            <div id="text2">
+
+                <div id="content3">
+
+                    <span>recibe hasta 37% de descuento y paga a MSI.</span>
+
+                </div>
+
+                <div id="content4" style="margin-top: 2em; background-color: #2079f1; height: 1.5em; text-align: center; margin-right: 15px;">
+
+                    <a class="button_test" href="#fragment-2933156-ijvi" style="font-weight: bold; text-decoration: none; color: white;">Cotiza Hoy</a>
+
+                </div>
+
+            </div>
+
+            <br>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
